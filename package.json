@@ -1,0 +1,63 @@
+{
+  "name": "@adametherzlab/feed-mix",
+  "version": "0.1.0",
+  "description": "Feed mix calculator — balance rations by nutrient targets per species",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "test": "bun test",
+    "build": "tsc --build",
+    "prepublishOnly": "bun run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "typescript",
+    "bun",
+    "nodejs",
+    "feed",
+    "livestock",
+    "nutrition",
+    "ration"
+  ],
+  "author": {
+    "name": "AdametherzLab",
+    "url": "https://github.com/AdametherzLab"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdametherzLab/feed-mix.git"
+  },
+  "homepage": "https://github.com/AdametherzLab/feed-mix#readme",
+  "bugs": {
+    "url": "https://github.com/AdametherzLab/feed-mix/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/AdametherzLab"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "sideEffects": false
+}
