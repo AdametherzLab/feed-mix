@@ -5,7 +5,7 @@
  * Supports least-cost formulation with ingredient constraints.
  * 
  * @example
- * ```typescript
+ * 
  * import { balanceRation, createIngredientId, type Ingredient } from 'feed-mix';
  * 
  * const corn = {
@@ -14,7 +14,7 @@
  *   costPerUnit: 0.25,
  *   nutrients: { crudeProtein: 8.5, energy: 3350, calcium: 0.02, phosphorus: 0.28 }
  * };
- * ```
+ * 
  */
 
 export type {
@@ -32,6 +32,11 @@ export type {
   RationFormulationInput,
 } from './types.js';
 
+export type {
+  ValidationError,
+  ValidationResult,
+} from './validation.js';
+
 export {
   balanceRation,
   computeRationNutrients,
@@ -48,3 +53,11 @@ export {
   loadDataFile,
   saveDataFile,
 } from './utils.js';
+
+export {
+  validateIngredient,
+  validateIngredients,
+  validateNutrientProfile,
+  validateIngredientConstraint,
+  validateFormulationRequest,
+} from './validation.js';
