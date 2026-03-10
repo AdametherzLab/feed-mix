@@ -61,3 +61,5 @@ export {
   validateIngredientConstraint,
   validateFormulationRequest,
 } from './validation.js';
+
+export { predefinedIngredients, loadCustomIngredients, saveCustomIngredients } from './ingredients.js';
